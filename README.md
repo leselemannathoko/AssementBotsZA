@@ -1,6 +1,6 @@
 # Botsza-Junior-Developer-Assessment
 
-Link to the prototype 👉 - [Figma Design].(https://www.figma.com/proto/28lO4HbTbOBiGcQDyeTprA/BotsZA-CRUD-Profile?node-id=1%3A3&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A3)
+Link to the prototype 👉 - [Figma Design](https://www.figma.com/proto/28lO4HbTbOBiGcQDyeTprA/BotsZA-CRUD-Profile?node-id=1%3A3&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A3)
 
 ## Purpose
 
