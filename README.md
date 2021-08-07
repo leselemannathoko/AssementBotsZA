@@ -1,6 +1,6 @@
 # Botsza-Junior-Developer-Assessment
 
-Link to the prototype 👉 - `https://www.figma.com/proto/28lO4HbTbOBiGcQDyeTprA/BotsZA-CRUD-Profile?node-id=1%3A3&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A3`
+Link to the prototype 👉 - [Figma Design].(https://www.figma.com/proto/28lO4HbTbOBiGcQDyeTprA/BotsZA-CRUD-Profile?node-id=1%3A3&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A3)
 
 ## Purpose
 
@@ -17,11 +17,11 @@ The main purpose of this Assessment is to get you to build your own CRUD profile
 ![Screenshot 2021-08-07 at 14 36 11](https://user-images.githubusercontent.com/54524026/128601717-2c7ba7c4-dee2-4599-8248-a62e5b688ebd.png)
 
 # Tech Stack
-- Angular (Any version)
+- Angular
 - HTML
 - css 💅
 - TypeScript
-- .Net Core (Any version)
+- .Net Core
 - C#
 - Postgresql
 
