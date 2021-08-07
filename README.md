@@ -11,9 +11,10 @@ The main purpose of this Assessment is to get you to build your own CRUD profile
 ## Screen 1
 
 ![Screenshot 2021-08-07 at 14 35 52](https://user-images.githubusercontent.com/54524026/128601712-ad3e5c14-f489-4098-9bee-ebdaa8113944.png)
-![Screenshot 2021-08-07 at 14 36 11](https://user-images.githubusercontent.com/54524026/128601717-2c7ba7c4-dee2-4599-8248-a62e5b688ebd.png)
 
 ## Screen 2
+
+![Screenshot 2021-08-07 at 14 36 11](https://user-images.githubusercontent.com/54524026/128601717-2c7ba7c4-dee2-4599-8248-a62e5b688ebd.png)
 
 # Tech Stack
 - Angular (Any version)
