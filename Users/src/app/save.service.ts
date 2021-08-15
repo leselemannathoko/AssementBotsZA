@@ -7,8 +7,13 @@ import { User } from './models/user';
   providedIn: 'root'
 })
 export class SaveService {
-  constructor(private http: HttpClient) { }
+  //userData: User;
 
+  constructor(private http: HttpClient) {
+
+   
+   }
+   userData: User = new User();
 
   registerUser(user: User): Observable<User> {
     return this.http.post<User>(`https://localhost:44301/Person` , user);

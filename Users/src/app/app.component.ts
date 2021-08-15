@@ -24,17 +24,12 @@ export class AppComponent implements OnInit {
    this.loadUsers();
   }
 
+
+  
 postUsers() {
-  /*if (this.userData._id == '') {*/
     this.saveService.registerUser(this.userData).subscribe((user: User) => {
       this.loadUsers();
     });
-  /*}*/
-  /* else {
-    this.saveService.updateUser(this.userData).subscribe((user: User) => {
-      this.loadUsers();
-    });
-  }*/
   }
 
 updateUsers() {
@@ -53,7 +48,7 @@ loadUsers() {
   }
 
 updateUser(person: User) {
-  this.userData = person;
+  this.userData = Object.assign({},person);
 }
 
 }
