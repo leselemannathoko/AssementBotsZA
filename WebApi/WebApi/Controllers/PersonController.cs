@@ -42,7 +42,7 @@ namespace WebApi.Controllers
         [HttpPost]
         public async Task<ActionResult> CreatePeople(CreatePeopleDto createPeopleDto)
         {
-            var people = new People
+             var people = new People
             {
                 Name = createPeopleDto.Name,
                 Email = createPeopleDto.Email,
@@ -66,7 +66,8 @@ namespace WebApi.Controllers
         public async Task<ActionResult> UpdatePeople(int id, UpdatePeopleDto updatePeopleDto)
         {
             var people = new People
-            {
+            {   
+                Id = id,
                 Name = updatePeopleDto.Name,
                 Email = updatePeopleDto.Email,
                 Surname = updatePeopleDto.Surname,

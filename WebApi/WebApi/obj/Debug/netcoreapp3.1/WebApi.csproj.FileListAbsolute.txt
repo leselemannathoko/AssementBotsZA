@@ -38,3 +38,8 @@ C:\Users\user\Documents\My Work\Botsza-Junior-Developer-Assessment\WebApi\WebApi
 C:\Users\user\Documents\My Work\Botsza-Junior-Developer-Assessment\WebApi\WebApi\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
 C:\Users\user\Documents\My Work\Botsza-Junior-Developer-Assessment\WebApi\WebApi\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
 C:\Users\user\Documents\My Work\Botsza-Junior-Developer-Assessment\WebApi\WebApi\obj\Debug\netcoreapp3.1\WebApi.csproj.CopyComplete
+C:\Users\user\Documents\My Work\Botsza-Junior-Developer-Assessment\WebApi\WebApi\obj\Debug\netcoreapp3.1\WebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\user\Documents\My Work\Botsza-Junior-Developer-Assessment\WebApi\WebApi\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\user\Documents\My Work\Botsza-Junior-Developer-Assessment\WebApi\WebApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\user\Documents\My Work\Botsza-Junior-Developer-Assessment\WebApi\WebApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\user\Documents\My Work\Botsza-Junior-Developer-Assessment\WebApi\WebApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll

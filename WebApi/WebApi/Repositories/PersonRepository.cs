@@ -52,6 +52,7 @@ namespace WebApi.Repositories
                 throw new NullReferenceException();
 
             PersonToUpdate.Name = people.Name;
+            PersonToUpdate.Email = people.Email;
             PersonToUpdate.ProgrammingLanguage = people.ProgrammingLanguage;
             PersonToUpdate.Surname = people.Surname;
             await _context.SaveChangesAsync();
