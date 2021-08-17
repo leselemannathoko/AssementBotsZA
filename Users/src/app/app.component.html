@@ -5,7 +5,7 @@
        <h3 class="mb-0">DataForm</h3>
      </div>
      <div class="card-body">
-      <form action="" #registerForm="ngForm" (ngSubmit)="registerForm">
+      <form #registerForm="ngForm" id="registerForm" (ngSubmit)="updateUsers()">
         <input [(ngModel)] ="userData._id" name="id"  type="hidden" class="form-control rounded-0" required>
 
         <div class="form-group">
@@ -31,7 +31,8 @@
         <div class="container">
           <div class="row">
             <div class="col-sm">
-               <button (click) ="postUsers()" type="button" class="btn btn-primary float-right"> Save</button>
+               <button (click) ="postUsers()" type="button" class="btn btn-primary float-right"> Save</button><div></div>
+               <button form="registerForm" type="submit" class="btn btn-secondary float-right">edit</button>
             </div>
   
     
@@ -60,14 +61,14 @@
        </thead>
        <tbody>
           <tr *ngFor="let person of users">
-            <td>{{person.name}}</td><br>
-            <td>{{person.email}}</td><br>
-            <td>{{person.surname}}</td><br>
-            <td>{{person.programmingLanguage}}</td><br>
+            <td (click)="populateForm(person)" >{{person.name}}</td><br>
+            <td (click)="populateForm(person)" >{{person.email}}</td><br>
+            <td (click)="populateForm(person)">{{person.surname}}</td><br>
+            <td (click)="populateForm(person)">{{person.programmingLanguage}}</td><br>
 
           
              <td>
-              <button (click) ="updateUser(person)" type="button" class="btn btn-secondary float-right">edit</button>
+              
 
              </td>
           </tr>

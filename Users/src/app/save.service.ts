@@ -23,7 +23,15 @@ export class SaveService {
     return this.http.get<User[]>(`https://localhost:44301/Person`);
   }
 
-   updateUser(person: User) {
-     return this.http.put(`https://localhost:44301/Person/${person._id}`, person);
+  getUsersById(personid: string): Observable<User[]> {
+    return this.http.get<User[]>(`https://localhost:44301/Person/` + personid);
+  }
+
+   updateUser(person: User): Observable<User> {
+     return this.http.put<User>(`https://localhost:44301/Person/${this.userData.id}`, person);
    }
+
+   DeleteUser(personid: string) {
+    return this.http.delete<User>(`https://localhost:44301/Person?id` + personid);
+  }
 }

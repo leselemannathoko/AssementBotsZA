@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
   userData: User;
 
   constructor( private saveService: SaveService) {
-    this.userData = new User();
+    //Data: User = new User();
 
   }
 
@@ -33,11 +33,16 @@ postUsers() {
   }
 
 updateUsers() {
-  this.saveService.updateUser(this.userData).subscribe((user: User) => {
-    this.loadUsers();
-  });
-
+  console.log(this.userData);
+   this.saveService.updateUser(this.userData).subscribe(() => {
+     this.loadUsers();
+   });
 }
+
+populateForm(SelectedPerson : User)
+ {
+   this.userData = Object.assign({}, SelectedPerson)
+ }
 
 loadUsers() {
     this.saveService.getUsers().subscribe((users: User[]) => {
@@ -47,9 +52,14 @@ loadUsers() {
     });
   }
 
-updateUser(person: User) {
-  this.userData = Object.assign({},person);
-}
+deleteUser(personid: string)
+{
+  this.saveService.DeleteUser(personid).subscribe(() => {
+
+});
+
+}  
+
 
 }
 
