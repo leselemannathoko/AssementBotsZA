@@ -12,6 +12,6 @@ namespace WebApi.Dtos
         public string Surname { get; set; }
         public string Email { get; set; }
         public string ProgrammingLanguage { get; set; }
-        public DateTime Datecreated { get; set; }
+
     }
 }

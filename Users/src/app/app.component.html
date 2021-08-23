@@ -5,7 +5,7 @@
        <h3 class="mb-0">DataForm</h3>
      </div>
      <div class="card-body">
-      <form #registerForm="ngForm" id="registerForm" (ngSubmit)="updateUsers()">
+      <form #updateForm="ngForm" id="updateForm" (ngSubmit)="updateUsers()">
         <input [(ngModel)] ="userData.id" name="id"  type="hidden" class="form-control rounded-0" required>
 
         <div class="form-group">
@@ -30,10 +30,7 @@
         
         <div class="container">
           <div class="row">
-            <div class="col-sm">
-               <button (click) ="postUsers()" type="button" class="btn btn-primary float-right"> Save</button><div></div>
-               <button form="registerForm" type="submit" class="btn btn-secondary float-right">edit</button>
-            </div>
+      
   
     
   
@@ -64,16 +61,17 @@
             <td (click)="populateForm(person)" >{{person.name}}</td><br>
             <td (click)="populateForm(person)" >{{person.email}}</td><br>
             <td (click)="populateForm(person)">{{person.surname}}</td><br>
-            <td (click)="populateForm(person)">{{person.programmingLanguage}}</td><br>
-
-          
+            <td (click)="populateForm(person)">{{person.programmingLanguage}}</td>
              <td>
-              
-
+                 <div class="col-sm">
+                    <button (click) ="postUsers()" type="button" class="btn btn-primary float-right"> Save</button><br>
+                    <button form="updateForm" type="submit" class="btn btn-secondary float-right">Edit</button><div></div>
+                    <button (click) ="onDelete(person.id)" type="submit" class="btn btn-primary float-right">Delete</button><div></div>
+                 </div>  
              </td>
           </tr>
        </tbody>
     </table>
- </div>
+
   
   </div>

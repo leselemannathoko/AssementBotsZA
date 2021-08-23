@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
   userData: User;
 
   constructor( private saveService: SaveService) {
-    //Data: User = new User();
+    this.userData = new User();
 
   }
 
@@ -52,10 +52,12 @@ loadUsers() {
     });
   }
 
-deleteUser(personid: string)
+onDelete(id: number)
 {
-  this.saveService.DeleteUser(personid).subscribe(() => {
-
+  this.saveService.DeleteUser(id).subscribe(() => {
+    this.loadUsers();
+}, error => {
+  console.error();
 });
 
 }  

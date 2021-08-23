@@ -28,10 +28,10 @@ export class SaveService {
   }
 
    updateUser(person: User): Observable<User> {
-     return this.http.put<User>(`https://localhost:44301/Person/${this.userData.id}`, person);
+     return this.http.put<User>(`https://localhost:44301/Person/${person.id}`, person);
    }
 
-   DeleteUser(personid: string) {
-    return this.http.delete<User>(`https://localhost:44301/Person?id` + personid);
+   DeleteUser(id: number): Observable<User> {
+    return this.http.delete<User>(`https://localhost:44301/Person/${id}`);
   }
 }

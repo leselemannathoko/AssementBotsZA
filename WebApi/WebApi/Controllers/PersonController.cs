@@ -55,7 +55,7 @@ namespace WebApi.Controllers
             return Ok();
         }
 
-        [HttpDelete("id")]
+        [HttpDelete("{id}")]
         public async Task<ActionResult> DeletePeople(int id)
         {
             await _personRepository.Delete(id);
@@ -72,7 +72,6 @@ namespace WebApi.Controllers
                 Email = updatePeopleDto.Email,
                 Surname = updatePeopleDto.Surname,
                 ProgrammingLanguage = updatePeopleDto.ProgrammingLanguage,
-                Datecreated = DateTime.Now
             };
 
           await _personRepository.update(people);
