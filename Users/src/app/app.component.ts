@@ -12,7 +12,6 @@ import { NgForm } from '@angular/forms';
 export class AppComponent implements OnInit {
   title = 'Users';
   users: User[];
-  selecteduser: User;
   userData: User;
 
   constructor( private saveService: SaveService) {
@@ -27,7 +26,7 @@ export class AppComponent implements OnInit {
 
   
 postUsers() {
-    this.saveService.registerUser(this.userData).subscribe((user: User) => {
+    this.saveService.registerUser(this.userData).subscribe(() => {
       this.loadUsers();
     });
   }

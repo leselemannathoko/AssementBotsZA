@@ -1,3 +1,5 @@
+using System.ComponentModel.Design;
+using System.Net.Security;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,8 +32,9 @@ namespace WebApi
         public void ConfigureServices(IServiceCollection services)
         {
 
-
-            services.AddDbContext<DataContext>(options => options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<DataContext>(options => {
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
+                });
             services.AddScoped<IDataContext>(provider => provider.GetService<DataContext>());
             services.AddScoped<IPersonRepository, PersonRepository>();
             services.AddSwaggerGen(c => 

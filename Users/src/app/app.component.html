@@ -27,51 +27,39 @@
           <label for="">Programming Language.</label>
           <input [(ngModel)] ="userData.programmingLanguage" name="name"  type="text" class="form-control rounded-0" required>
         </div>
-        
-        <div class="container">
-          <div class="row">
-      
-  
-    
-  
-      </div>
-    </div> 
+        <button (click) ="postUsers()" type="button" class="btn btn-primary "> Save</button><br>
       </form>
      </div>
    </div>
   </div>
-  
-  
+</div>
+    
 
-  <div>
-    <h1>Welcome to my BotsZA CRUD Profile</h1>
-    <table>
-       <thead>
-          <tr>
+<html></html>
 
-             <th>Name</th>
-             <th>Email</th>
-             <th>Surname</th>
-             <th>Coding Language</th>
-  
-          </tr>
-       </thead>
-       <tbody>
-          <tr *ngFor="let person of users">
-            <td (click)="populateForm(person)" >{{person.name}}</td><br>
-            <td (click)="populateForm(person)" >{{person.email}}</td><br>
-            <td (click)="populateForm(person)">{{person.surname}}</td><br>
-            <td (click)="populateForm(person)">{{person.programmingLanguage}}</td>
-             <td>
-                 <div class="col-sm">
-                    <button (click) ="postUsers()" type="button" class="btn btn-primary float-right"> Save</button><br>
-                    <button form="updateForm" type="submit" class="btn btn-secondary float-right">Edit</button><div></div>
-                    <button (click) ="onDelete(person.id)" type="submit" class="btn btn-primary float-right">Delete</button><div></div>
-                 </div>  
-             </td>
-          </tr>
-       </tbody>
+    <table class="table table-bordered"  *ngFor="let person of users">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Surname</th>
+          <th>Coding Language</th>
+          <th>Buttons</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th (click)="populateForm(person)"  scope="row">{{person.name}}</th>
+          <td (click)="populateForm(person)" >{{person.email}}</td>
+          <td (click)="populateForm(person)" >{{person.surname}}</td>
+          <td (click)="populateForm(person)" >{{person.programmingLanguage}}</td>
+        <td>
+          <div class="btn-group" style="width:50%">
+            <button form="updateForm" type="submit" class="btn btn-secondary ">Update</button><br>
+            <button (click) ="onDelete(person.id)" type="submit" class="btn btn-primary ">Delete</button><div></div>
+            </div>
+        </td>
+        </tr>
+     
+      </tbody>
     </table>
-
-  
-  </div>
